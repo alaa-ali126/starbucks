@@ -1,0 +1,138 @@
+:root {
+  --main-color: #037144;
+  --second-color: ;
+  --third-color: ;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  /* overflow: hidden; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+/* ********************************************** */
+header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+header::before {
+  content: "";
+  width: 1200px;
+  height: 1200px;
+  position: absolute;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  bottom: calc(-1200px / 2);
+  right: calc(-1200px / 2);
+  z-index: -1;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  padding: 15px 0;
+}
+header nav .logo {
+  width: 70px;
+}
+header nav .logo img {
+  max-width: 100%;
+}
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+header nav ul a{
+  transition: color 0.3s;
+  font-weight: bold;
+}
+header nav ul a:hover {
+  color: var(--main-color);
+}
+
+/* *********************************************** */
+header .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+header .main .info .title {
+  font-size: 80px;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+header .main .info .title span {
+  color: #037144;
+  font-weight: bold;
+
+}
+header .main .info p {
+  font-size: 18px;
+  width: 65%;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+header .main .info .learn-more {
+  color: #fff;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+header .main .info .learn-more:hover {
+  background-color: #037143a8;
+}
+header .main .social {
+  width: 30px;
+  position: absolute;
+  right: -75px;
+}
+header .main .social a {
+  width: 25px;
+  display: block;
+}
+header .main .social img{
+  max-width: 100%;
+  filter: invert();
+  margin: 20px;
+}
+header .main .cup {
+  width: 600px;
+}
+header .main .cup img {
+  max-width: 100%;
+}
+header .thumbs {
+  width: fit-content;
+  margin: 0 auto;
+}
+header .thumbs img {
+  width: 65px;
+  margin-left: 75px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+header .thumbs img:hover {
+  transform: translateY(-20px);
+}
