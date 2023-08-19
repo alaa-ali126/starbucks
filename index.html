@@ -14,6 +14,7 @@
   </head>
   <body>
     <header>
+      <div class="circle"></div>
       <div class="container">
         <nav>
           <div class="logo">
@@ -47,12 +48,22 @@
           </div>
         </div>
         <div class="thumbs">
-          <img src="./img/thumb1.png" alt="">
-          <img src="./img/thumb2.png" alt="">
-          <img src="./img/thumb3.png" alt="">
+          <img
+            src="./img/thumb1.png"
+            alt=""
+            onclick="changeThumb('./img/img1.png');changeColor('#017143')" />
+          <img
+            src="./img/thumb2.png"
+            alt=""
+            onclick="changeThumb('./img/img2.png');changeColor('#eb7495')" />
+          <img
+            src="./img/thumb3.png"
+            alt=""
+            onclick="changeThumb('./img/img3.png');changeColor('#b752b1')" />
         </div>
       </div>
     </header>
     <!-- ******************************************** -->
+    <script src="./app.js"></script>
   </body>
 </html>

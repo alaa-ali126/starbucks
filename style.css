@@ -29,8 +29,7 @@ header {
   overflow: hidden;
   position: relative;
 }
-header::before {
-  content: "";
+.circle {
   width: 1200px;
   height: 1200px;
   position: absolute;
