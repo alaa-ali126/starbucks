@@ -57,7 +57,7 @@ header nav ul {
   display: flex;
   gap: 40px;
 }
-header nav ul a{
+header nav ul a {
   transition: color 0.3s;
   font-weight: bold;
 }
@@ -83,7 +83,6 @@ header .main .info .title {
 header .main .info .title span {
   color: #037144;
   font-weight: bold;
-
 }
 header .main .info p {
   font-size: 18px;
@@ -111,7 +110,7 @@ header .main .social a {
   width: 25px;
   display: block;
 }
-header .main .social img{
+header .main .social img {
   max-width: 100%;
   filter: invert();
   margin: 20px;
